@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Style+Script&display=swap');
+@media screen and (width >=300px) {
+    * {
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: rgb(30,30,30);
+    }
+    aside{
+        display: none;
+    }
+
+    .instavo{
+        font-family: "Style Script", Cursive;
+        font-weight: bold;
+        font-size:40px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        background-color: transparent;
+    }
+
+    .nav-zoeken {
+        display: none;
+    }
+
+
+    .icoon {
+        display: flex;
+        gap: 15px;
+        height: 30px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .story {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        color:white;
+    }
+
+    .story img {
+        width: 60px;
+        height:60px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    .story div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .story::-webkit-scrollbar {
+        display: none;
+    }
+    .content {
+        display:grid;
+        gap:15px;
+    }
+
+    .post {
+        width: 100%;
+        background-color: rgb(40,40,40);
+        color: white;
+        padding:0;
+        object-fit: cover;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    .user img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .foto {
+        width:100%;
+        height: 500px;
+        justify-self: center;
+    }
+
+    .foto img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .post-btn {
+        width: 40px;
+        height: 30px;
+        display: flex;
+        gap: 10px;
+        font-size: 25px;
+        background-color:transparent;
+        width:100% ;
+        justify-content: space-between;
+    }
+    i:hover {
+        color:red;
+    }
+    .post-btn div {
+        display:flex;
+        align-items: center;
+        gap:5px;
+    }
+    .post-icons div {
+        display:flex;
+        gap:3px;
+    }
+
+    .post-btn img {
+        width: 20px;
+        height: 20px;
+        filter: invert(100%); 
+    }
+    .description .creator {
+        font-size:13px;
+    }
+
+    .description .description {
+        font-size:10px;
+    }
+
+    .description .post-time {
+        font-size:10px;
+    }
+    .post-btn p{
+        font-size: 15px;
+    }
+    .storys {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:60px;
+        height:60px;
+    }
+
+    .storys img{
+        position:absolute;
+        width:60px;
+        height:60px;
+        border-radius: 60px;
+        object-fit: cover;
+    }
+    
+    img.storyProfiel{
+    width: 50px;
+    height: 50px;
+}
+}
+
+@media screen and (width >=768px) {
+    body {
+        padding: 0 300px 0 0;
+    }
+
+    nav {
+        background-color: lavender;
+    }
+
+    .icoon {
+        display:none;
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        position:fixed;
+        top:0;
+        right:0;
+        width:300px;
+        height:100%;
+        background: lavender;
+    }
+    aside div{
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        gap: 50px;
+    }
+    aside img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    p div{
+        font-family: "Style Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+  
+
+
+
+
+}
