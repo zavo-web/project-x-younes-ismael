@@ -73,15 +73,29 @@
         gap: 10px;
     }
 
-    .user {
+    .user div {
         display: flex;
         align-items: center;
         gap:10px;
     }
-
-    .user img {
+    .user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .user div img{
+        width:50px;
+        height:50px;
+    }
+    .user div .storyProfiel {
         width: 40px;
         height: 40px;
+    }
+    .optie{
+        filter: invert(100%);
+        width: 25px;
+        height:25px;
     }
 
     .foto {
@@ -148,17 +162,10 @@
 
     .storys img{
         position:absolute;
-        width:60px;
-        height:60px;
         border-radius: 60px;
         object-fit: cover;
     }
     
-    
-    img.storyProfiel{
-    width: 50px;
-    height: 50px;
-}
 }
 
 
@@ -193,6 +200,8 @@
         font-weight: 700;
         border-left: 1px solid rgb(100, 100, 100);
     }
+
+
     aside section{
         display: flex;
         flex-direction: column;
@@ -220,6 +229,9 @@
         font-family: "Style Script", cursive;
         font-weight: 400;
         font-style: normal;
+    }
+    aside a{
+        padding:10px;
     }
     aside a:hover{
         background-color: rgb(50, 50, 50);
