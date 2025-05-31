@@ -1,0 +1,91 @@
+@media screen and (width >= 378px) {
+    aside {
+        display: none;
+    }
+}
+
+@media screen and (width >= 1024px) {
+    aside {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        color: white;
+        font-weight: 700;
+        border-left: 1px solid rgb(100, 100, 100);
+    }
+
+    aside section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    aside img {
+        width: 25px;
+        height: 25px;
+        filter: invert(100%);
+    }
+
+    a, .a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s;
+        color: white;
+    }
+
+    aside a:hover {
+        background-color: rgb(50, 50, 50);
+    }
+
+    #search {
+        display: none;
+    }
+
+    .asidepopup {
+        display: none;
+    }
+
+    #search:checked ~ .asidepopup {
+        display: block;
+        position: absolute;
+        right: 250px;
+        width: 250px;
+        height: 100%;
+        background-color: rgb(30, 30, 30);
+        padding: 20px;
+    }
+
+    .asidepopup input {
+        width: 200px;
+        height: 30px;
+        padding: 5px 10px;
+        color: white;
+        outline: none;
+        border: 1px solid white;
+        background-color: transparent;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    p div {
+        font-family: "Style Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .instavo {
+        font-family: "Style Script", cursive;
+        font-weight: bold;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,71 @@
+/* header.css */
+
+@media screen and (width >= 378px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: transparent;
+        filter: invert(100%);
+        margin-bottom: 12px;
+    }
+
+    .nav-zoeken {
+        display: none;
+    }
+
+    .icoon {
+        display: flex;
+        gap: 15px;
+        height: 30px;
+    }
+
+    .story {
+        display: flex;
+        overflow-x: auto;
+        color: white;
+        text-align: center;
+        gap:25px;
+        font-size:11px;
+    }
+
+    .story::-webkit-scrollbar {
+        display: none;
+    }
+
+    .storys {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .storys img:first-child {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .storyProfiel {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (width >= 1024px) {
+    .icoon {
+        display: none;
+    }
+}

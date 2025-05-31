@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Style+Script&display=swap');
-@media screen and (width >=300px) {
+
+@media screen and (width >=1px) {
     * {
         font-family:Arial, Helvetica, sans-serif;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
     body{
         background-color: rgb(30,30,30);
@@ -9,8 +17,6 @@
     aside{
         display: none;
     }
-
-   
 
     nav {
         display: flex;
@@ -25,24 +31,27 @@
         display: none;
     }
 
-
     .icoon {
         display: flex;
         gap: 15px;
-        height: 30px;
+        padding: 10px;
     }
-
+    .icoon img{
+        width: 45px;
+        height: 45px;
+    }
 
     .story {
         display: flex;
         overflow-x: auto;
         gap: 15px;
         color:white;
+        margin-left: 17.5%;
     }
 
     .story img {
-        width: 60px;
-        height:60px;
+        width: 50px;
+        height:50px;
         object-fit: cover;
         border-radius: 50px;
     }
@@ -57,13 +66,14 @@
     .story::-webkit-scrollbar {
         display: none;
     }
+    
     .content {
         display:grid;
         gap:15px;
     }
 
     .post {
-        width: 100%;
+        width: 65%;
         color: white;
         padding:0;
         object-fit: cover;
@@ -71,6 +81,12 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .storys img:first-child {
+        width: 60px; 
+        height: 60px;
     }
 
     .user div {
@@ -78,20 +94,26 @@
         align-items: center;
         gap:10px;
     }
+    
     .user {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
+    
     .user div img{
         width:50px;
         height:50px;
     }
+    
     .user div .storyProfiel {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
+
+    
+    
     .optie{
         filter: invert(100%);
         width: 25px;
@@ -111,23 +133,25 @@
     }
 
     .post-btn {
-        width: 40px;
+        width: 100%;
         height: 30px;
         display: flex;
         gap: 10px;
         font-size: 25px;
         background-color:transparent;
-        width:100% ;
         justify-content: space-between;
     }
+    
     i:hover {
         color:whitesmoke;
     }
+    
     .post-btn div {
         display:flex;
         align-items: center;
         gap:5px;
     }
+    
     .post-icons div {
         display:flex;
         gap:3px;
@@ -138,6 +162,7 @@
         height: 20px;
         filter: invert(100%); 
     }
+    
     .description .creator {
         font-size:13px;
     }
@@ -149,9 +174,11 @@
     .description .post-time {
         font-size:10px;
     }
+    
     .post-btn p{
         font-size: 15px;
     }
+    
     .storys {
         display:flex;
         align-items: center;
@@ -165,24 +192,22 @@
         border-radius: 60px;
         object-fit: cover;
     }
-    
 }
 
-
-@media screen and (width >=768px) {
+@media screen and (width >=1024px) {
     body {
         padding: 0 300px 0 0;
     }
-     .logo {
+    
+    .logo {
         display: none;
     }
 
-.instavo{
+    .instavo{
         font-family: "Style Script", Cursive;
         font-weight: bold;
         font-size:40px;
     }
-
 
     .icoon {
         display:none;
@@ -201,12 +226,12 @@
         border-left: 1px solid rgb(100, 100, 100);
     }
 
-
     aside section{
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
+    
     aside img{
         width: 25px;
         height: 25px;
@@ -225,23 +250,29 @@
         transition: 0.5s;
         color: white;
     }
+    
     p div{
         font-family: "Style Script", cursive;
         font-weight: 400;
         font-style: normal;
     }
+    
     aside a{
         padding:10px;
     }
+    
     aside a:hover{
         background-color: rgb(50, 50, 50);
     }
+    
     #search{
         display:none;
     }
+    
     .asidepopup{
         display:none;
-     }
+    }
+    
     #search:checked ~ .asidepopup{
         display:block;
         position: absolute;
@@ -250,7 +281,6 @@
         height:100%;
         background-color: rgb(30, 30, 30);
         padding:20px;
-        
     }
 
     .asidepopup input{
@@ -264,12 +294,11 @@
         background-color:transparent;
         border-radius: 10px;
         margin-bottom:10px;
-
     }
+}
 
-  
-
-
-
-
+@media screen and (width >=1024px) {
+    body {
+        padding-right: 300px;
+    }
 }
