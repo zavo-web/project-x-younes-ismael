@@ -1,10 +1,14 @@
-@media screen and (width >= 378px) {
+@media screen and (width >= 1px) {
     aside {
         display: none;
     }
 }
 
 @media screen and (width >= 1024px) {
+        body {
+            padding-right: 300px;
+        }
+
     aside {
         display: flex;
         justify-content: center;
